@@ -10,16 +10,3 @@
     text-transform: uppercase;
 }
 
-
-// @media(max-width:$tablet-width) {
-//     .h1 {
-//         font-size: 48px;
-//         letter-spacing: 0.043em;
-//     }
-// }
-
-@media(max-width:$mobile-width) {
-    .h1 {
-        font-size: 33px;
-    }
-}

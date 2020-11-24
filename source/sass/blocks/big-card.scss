@@ -1,0 +1,134 @@
+.big-card {
+    padding: 16px 17px 8px 22px;
+
+    background-color: $white;
+    box-shadow: 0px 12px 39px rgba(0, 0, 0, 0.07);
+    border-radius: 7px;
+    border: 1px solid transparent;
+
+    &:focus,
+    &:hover,
+    &:active {
+        border: 1px solid $secondary-color-1;
+    }
+}
+
+.big-card__tag {
+    @include hover();
+
+    font-family: $mont;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: $secondary-color-1;
+}
+
+.big-card__caption {
+    margin-bottom: 16px;
+}
+
+.big-card__row {
+    margin-bottom: 18px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &:first-child {
+        border-bottom: 1px solid $primary-color-3;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.big-card__man {
+    margin-right: 10px;
+
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.big-card__name {
+    font-family: $mont;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: 0px;
+    color: $primary-color-1;
+    vertical-align: middle;
+}
+
+.big-card__factor {
+    margin: 0;
+
+    font-family: $mont;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 2.1;
+    letter-spacing: 0px;
+    color: $primary-color-1;
+    text-align: right;
+
+    & span {
+        display: block;
+
+        font-family: $mont;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: 0px;
+
+        color: $black-3;
+    }
+}
+
+.big-card__team-logo {
+    vertical-align: middle;
+}
+
+.big-card__team {
+    font-family: $mont;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0px;
+
+    vertical-align: middle;
+}
+
+.big-card__time {
+    font-family: $mont;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 2.1;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $primary-color-1;
+
+    & span {
+        display: block;
+
+        font-size: 18px;
+        line-height: 1.33;
+        color: $black-3;
+        text-align: center;
+    }
+}
+
+@media(max-width:$desktop-width) {
+    .big-card {
+        padding: 16px 8px;
+    }
+}
+
+@media(max-width:$tablet-width) {
+    .big-card__team {
+        font-size: 14px;
+    }
+}
+

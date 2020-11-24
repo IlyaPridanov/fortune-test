@@ -10,6 +10,18 @@
     }
 }
 
+@mixin no-hover() {
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: initial;
+
+        text-decoration: none;
+
+        opacity: 1;
+    }
+}
+
 @mixin list() {
     margin: 0;
     padding: 0;

@@ -14,31 +14,4 @@
     margin-bottom: 13px;
 }
 
-.top__button {
-    @include hover();
-
-    margin: 21px auto 0;
-    padding: 14px 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: $gotham;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0em;
-    text-transform: uppercase;
-    color: $black-2;
-
-    border: 1px solid $primary-color-2;
-    border-radius: 5px;
-    background-color: transparent;
-
-    transform: skewX(-17deg);
-
-    & span {
-        transform: skewX(17deg);
-    }
-}
 
