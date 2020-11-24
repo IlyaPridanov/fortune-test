@@ -1,0 +1,25 @@
+.h2 {
+    margin: 0;
+    margin-left: 5px;
+
+    font-family: $gotham;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+
+// @media(max-width:$tablet-width) {
+//     .h1 {
+//         font-size: 48px;
+//         letter-spacing: 0.043em;
+//     }
+// }
+
+@media(max-width:$mobile-width) {
+    .h1 {
+        font-size: 33px;
+    }
+}
